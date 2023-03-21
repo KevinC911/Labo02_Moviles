@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/background_layout_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="BMI"
+        android:textColor="@color/cardview_light_background"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_marginTop="@dimen/top_card_margin"
+         />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_dimen"
+            android:layout_marginHorizontal="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/top_card_margin"
+            app:cardBackgroundColor="@color/card_color">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                />
+
+            <EditText
+                android:id="@+id/weight_edittxt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="70dp"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="KG"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginTop="90dp"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:layout_marginLeft="200dp"
+
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_dimen"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/top_card_margin"
+        app:cardBackgroundColor="@color/card_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            />
+
+        <EditText
+            android:id="@+id/height_edittxt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/cardview_light_background"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="200dp"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+
+            />
+
+</androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/calculate_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/top_card_margin"
+        android:text="@string/button_text"
+        android:layout_marginHorizontal="@dimen/top_card_margin"
+        android:backgroundTint="@color/btt_color"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_dimen"
+        android:layout_marginHorizontal="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/top_card_margin"
+        app:cardBackgroundColor="@color/card_color">
+
+        <TextView
+            android:id="@+id/BMI_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_marginTop="@dimen/top_card_margin"
+            />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:textAlignment="center"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:id="@+id/range_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="Sample"
+            android:textAlignment="center"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
